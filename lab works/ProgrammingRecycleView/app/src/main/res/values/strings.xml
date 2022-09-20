@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ProgrammingRecycleView</string>
+    <string-array name="Programming_language">
+        <item>C++</item>
+        <item>C#</item>
+        <item>Java</item>
+        <item>Javascript</item>
+        <item>Kotlin</item>
+        <item>Python</item>
+        <item>Ruby</item>
+        <item>Swift</item>
+        <item>TypeScript</item>
+        <item>VisualStudio</item>
+
+    </string-array>
+    
+    <string-array name="description">
+        <item></item>
+    </string-array>
+</resources>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="409dp"
+            android:layout_height="729dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title"
+                android:textAlignment="center"
+                android:layout_marginLeft="100dp"
+                android:textColor="@color/purple_500"
+                android:textSize="20dp" />
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/name"/>
+                    <EditText
+                        android:id="@+id/editTextTextPersonName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                       android:ems="10"
+                        android:inputType="textPersonName"
+                        android:hint="Enter your name"/>
+
+                </TableRow>
+            </TableLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/gender"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <RadioButton
+                android:id="@+id/GenderButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="Male" />
+            <RadioButton
+                android:id="@+id/GenderButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Female" />
+            </LinearLayout>
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/PhoneNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:text="@string/PhoneNo"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+                    <EditText
+                        android:id="@+id/EnterContactNumber"
+                        android:layout_width="239dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="23dp"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:hint="Enter your contact number" />
+                </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/email"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+                <EditText
+                    android:id="@+id/EnterEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Enter your email address" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:id="@+id/MarryStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/marry"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+                <ToggleButton
+                    android:id="@+id/toggleButton2"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginRight="120dp"
+                    android:text="no"
+                    android:textOff="NO"
+                    android:textOn="YES" />
+            </TableRow>
+            </TableLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/qualification"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+            <CheckBox
+                android:id="@+id/checkBoxOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="10 passed"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+            <CheckBox
+                android:id="@+id/checkBoxTwo"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="12 passed"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/checkBoxThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Under graduate"
+                android:layout_marginLeft="148dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+            <CheckBox
+                android:id="@+id/checkBoxFour"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="graduate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+            <TextView android:id="@+id/Address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:text="@string/address"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Spinner
+                android:id="@+id/dzongkhaSpinner"
+                android:layout_width="225dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp" />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/gewog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="148dp"
+                    android:ems="10"
+                    android:hint="Enter Gewog"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/country"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <EditText
+                    android:id="@+id/country"
+                    android:layout_width="229dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:ems="10"
+                    android:hint="country" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="14dp"
+                android:onClick="onClick"
+                android:text="Submit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="53dp"
+                android:layout_height="71dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="50dp"
+                android:backgroundTint="@color/teal_200"
+                android:onClick=""
+                app:fabSize="normal"
+                app:srcCompat="@android:drawable/ic_dialog_email"
+                tools:ignore="OnClick" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
